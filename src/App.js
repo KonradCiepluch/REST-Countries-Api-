@@ -19,7 +19,7 @@ const App = () => {
     <DataProvider>
       <ThemeProvider theme={theme}>
         <GlobalStyle darkmode={mode}/>
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
           <Wrapper>
             <Header darkmode={mode} switchMode={switchMode} />
               <Switch>

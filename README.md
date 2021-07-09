@@ -1,5 +1,15 @@
 Hello, this is my solution for this challenge, I wanted to practise react, redux and styled-components.
 
+Use cases: 
+
+- all countries are displayed on homepage
+- searching countries by name handled by form, while form is submitted with empty input field, it returns all countries
+- filtering by region
+- click on country to see details
+- on country detail page you can see border countries and click one to see details of it
+- dark/light mode provided by button at right top corner
+- responsive 
+
 # Frontend Mentor - REST Countries API with color theme switcher solution
 
 This is a solution to the [REST Countries API with color theme switcher challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/rest-countries-api-with-color-theme-switcher-5cacc469fec04111f7b848ca). 
