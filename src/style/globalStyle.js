@@ -6,6 +6,11 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    
     body {
         font-family: 'Nunito Sans', sans-serif;
         background-color: ${({theme, darkmode}) => darkmode ? theme.colors.veryDarkBlue : theme.colors.lightGray};

@@ -41,6 +41,7 @@ export const Back = styled(Link)`
 `;
 
 export const FlagWrapper = styled.div`
+    align-self: center;
     flex-basis: 45%;
     background-color: ${({theme, darkmode}) => darkmode ? theme.colors.darkBlue : theme.colors.white};
     padding: 10px;
@@ -49,13 +50,12 @@ export const FlagWrapper = styled.div`
     @media(max-width: 1050px) {
         flex-basis: 50%;
     }
-    @media(max-width: 850px) {
-        flex-basis: 55%;
-    }
+    
 
     & img {
         width: 100%;
         min-height: 100%;
+        display: block;
     }
 `;
 

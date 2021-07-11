@@ -2,6 +2,7 @@ export const REQUEST_DATA = 'REQUEST_DATA';
 export const GET_DATA = 'GET_DATA';
 export const GET_DATA_FAILED = 'GET_DATA_FAILED';
 export const FILTER_DATA = 'FILTER_DATA';
+export const FILTER_SEARCHED = 'FILTER_SEARCHED';
 export const SEARCH_COUNTRIES = 'SEARCH_COUNTRIES';
 export const SHOW_ALL = 'SHOW_ALL';
 
@@ -21,6 +22,11 @@ export const filterData = (region) => ({
     type: FILTER_DATA,
     region
 });
+
+export const filterSearched = (region) => ({
+    type: FILTER_SEARCHED,
+    region
+})
 
 export const searchCountries = (phrase) => ({
     type: SEARCH_COUNTRIES,
@@ -44,7 +50,6 @@ export const getAllData = () => {
                     return response.json()}} )
             .then(data => dispatch(getData(data)))
             .catch(error => dispatch(getDataFailed(error)))
-            // .catch(error => console.log(error))
-        }, 1000);
+        }, 2000);
     }
 };

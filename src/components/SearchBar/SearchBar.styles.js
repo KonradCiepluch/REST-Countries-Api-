@@ -7,7 +7,7 @@ export const SearchWrapper = styled.div`
     padding: 40px 50px 15px 50px;
 
     @media(max-width: 850px) {
-        display: block;
+        flex-wrap: wrap;
         padding: 40px 35px 15px 35px;
     }
 `;
@@ -18,6 +18,7 @@ export const Form = styled.form`
     border-radius: 5px;
 
     @media(max-width: 850px){
+        flex-basis: 100%;
         height: 50px;
         margin-bottom: 35px;
     }
@@ -77,10 +78,6 @@ export const Container = styled.div`
     color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
     border-radius: 5px;
     padding: 15px;
-
-    @media(max-width: 850px) {
-        width: 160px;
-    }
 
     & button {
         position: relative;

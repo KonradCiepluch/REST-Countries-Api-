@@ -14,6 +14,8 @@ const App = () => {
 
   const [mode, setMode] = useState(true);
   const switchMode = () => setMode(!mode);
+  
+  const [value, setValue] = useState('');
 
   return ( 
     <DataProvider>
@@ -24,7 +26,7 @@ const App = () => {
             <Header darkmode={mode} switchMode={switchMode} />
               <Switch>
                 <Route path='/' exact>
-                  <SearchBar darkmode={mode}/>
+                  <SearchBar value={value} setValue={setValue} darkmode={mode}/>
                   <MainSection darkmode={mode} />
                 </Route>
                 <Route path='/country/:name'>
