@@ -4,11 +4,15 @@ Use cases:
 
 - all countries are displayed on homepage
 - searching countries by name handled by form, while form is submitted with empty input field, it returns all countries
-- filtering by region
+- filtering by region from all countries 
+- filtering by region from searched phrase 
+- while there are no matches from phrase, filtering returns matches from whole world
 - click on country to see details
 - on country detail page you can see border countries and click one to see details of it
 - dark/light mode provided by button at right top corner
+- scrolling to page beginning provided by button located at bottom of page
 - responsive 
+
 
 # Frontend Mentor - REST Countries API with color theme switcher solution
 

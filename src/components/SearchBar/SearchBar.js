@@ -14,6 +14,10 @@ const SearchBar = ({darkmode, value, setValue}) => {
     const chooseRegion = (e) => {
         const region = e.target.name;
         if(value && searched.length) dispatch(filterSearched(region));
+        if(value && !searched.length) {
+            dispatch(filterData(region));
+            setValue(''); 
+        }
         if(!value) dispatch(filterData(region)); 
     }
 
