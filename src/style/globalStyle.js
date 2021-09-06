@@ -14,6 +14,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         font-family: 'Nunito Sans', sans-serif;
         background-color: ${({theme, darkmode}) => darkmode ? theme.colors.veryDarkBlue : theme.colors.lightGray};
+        transition: background-color .3s;
     }
 
     a, button {

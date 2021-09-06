@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const Wrapper = styled.main`
     padding: 25px 50px;
     background-color: ${({theme, darkmode}) => darkmode ? theme.colors.veryDarkBlue : theme.colors.lightGray};
+    transition: background-color .3s;
 
     @media(max-width: 850px) {
         padding: 20px 40px;
@@ -17,7 +18,7 @@ export const Wrapper = styled.main`
 
     & h2 {
         color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
-        
+        transition: color .3s;
     }
 `;
 
@@ -52,6 +53,7 @@ export const Preload = styled.div`
         font-size: 50px;
         color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
         animation: rotation 1.5s linear infinite;
+        transition: color .3s;
     }
 
     @keyframes rotation {

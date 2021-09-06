@@ -34,6 +34,7 @@ export const Back = styled(Link)`
     padding: 10px 30px;
     border-radius: 5px;
     box-shadow: 0 0 2px black;
+    transition: background-color .3s, color .3s;
 
     i{
         margin-right: 10px;
@@ -46,6 +47,7 @@ export const FlagWrapper = styled.div`
     background-color: ${({theme, darkmode}) => darkmode ? theme.colors.darkBlue : theme.colors.white};
     padding: 10px;
     border-radius: 5px;
+    transition: background-color .3s;
 
     @media(max-width: 1050px) {
         flex-basis: 50%;
@@ -63,6 +65,7 @@ export const Details = styled.div`
     flex-basis: 45%;
     margin-top: 25px;
     color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
+    transition: color .3s;
 
     @media(max-width: 950px) {
         flex-basis: 40%;
@@ -135,6 +138,7 @@ export const StyledLink = styled(Link)`
         border-radius: 5px;
         font-weight: 300;
         box-shadow: 0 0 2px black;
+        transition: background-color .3s, color .3s;
 
         @media(max-width: 850px) {
             margin: 0 5px 5px 0;

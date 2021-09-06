@@ -6,6 +6,7 @@ export const Wrapper = styled(Link)`
     background-color: ${({theme, darkmode}) => darkmode ==='true' ? theme.colors.darkBlue : theme.colors.white};
     border-radius: 5px;
     text-decoration: none;
+    transition: background-color .3s;
 
     @media(max-width: 850px) {
         margin-bottom: 50px;
@@ -24,6 +25,7 @@ export const Wrapper = styled(Link)`
 export const Info = styled.div`
     padding: 15px;
     color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
+    transition: color .3s;
 
     @media(max-width: 850px) {
         padding: 25px;

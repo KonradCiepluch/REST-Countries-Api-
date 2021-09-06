@@ -3,8 +3,11 @@ import { Wrapper, Countries, Preload, Button } from './MainSection.styles';
 import { useSelector, useDispatch } from 'react-redux';
 import { getAllData } from '../DataProvider/actions';
 import Country from './Country';
+import smoothscroll from 'smoothscroll-polyfill';
 
 const MainSection = ({darkmode}) => {
+
+    smoothscroll.polyfill();
 
     const [height, setHeight] = useState(0);
 
@@ -35,7 +38,7 @@ const MainSection = ({darkmode}) => {
     }, [countries]);
     
     const scrollToTop = () => {
-        window.scrollTo(0, 0);
+        document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
     };
     
     return (  

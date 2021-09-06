@@ -5,6 +5,7 @@ export const SearchWrapper = styled.div`
     justify-content: space-between;
     background-color: ${({theme, darkmode}) => darkmode ? theme.colors.veryDarkBlue : theme.colors.lightGray};
     padding: 40px 50px 15px 50px;
+    transition: background-color .3s;
 
     @media(max-width: 850px) {
         flex-wrap: wrap;
@@ -16,6 +17,7 @@ export const Form = styled.form`
     flex-basis: 30%;
     background-color: ${({theme, darkmode}) => darkmode ? theme.colors.darkBlue : theme.colors.white};
     border-radius: 5px;
+    transition: background-color .3s;
 
     @media(max-width: 850px){
         flex-basis: 100%;
@@ -30,6 +32,7 @@ export const Form = styled.form`
         height: 100%;
         width: 20%;
         cursor: pointer;
+        transition: color .3s;
 
         @media(max-width: 850px) {
             width: 15%;
@@ -42,6 +45,7 @@ export const Form = styled.form`
         background-color: transparent;
         border-style: none;
         color: ${({theme, darkmode}) => darkmode  ? theme.colors.white : theme.colors.lightModeBlue};
+        transition: color .3s;
 
         @media(max-width: 850px) {
             width: 85%;
@@ -61,6 +65,7 @@ export const Button = styled.button`
         padding: 15px 20px;
         color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
         cursor: pointer;
+        transition: background-color .3s, color .3s;
 
         & i{
             padding-left: 20px;
@@ -78,6 +83,7 @@ export const Container = styled.div`
     color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
     border-radius: 5px;
     padding: 15px;
+    transition: background-color .3s, color .3s;
 
     & button {
         position: relative;
@@ -97,7 +103,7 @@ export const Container = styled.div`
             width: 2px;
             background-color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
             opacity: 0;
-            transition: opacity .2s;
+            transition: opacity .2s, background-color .3s; 
         }
 
         &:hover::after {

@@ -5,6 +5,7 @@ export const StyledHeader  = styled.header`
     justify-content: space-between;
     padding: 20px 50px;
     background-color: ${({theme, darkmode}) => darkmode ?  theme.colors.darkBlue : theme.colors.white};
+    transition: background-color .3s;
 
     @media(max-width: 450px) {
         padding: 20px 25px;
@@ -18,6 +19,7 @@ export const Button = styled.button`
     background-color: transparent;
     font-weight: 600;
     cursor: pointer;
+    transition: color .3s;
 
     @media(max-width: 450px) {
         padding: 0;
@@ -33,6 +35,7 @@ export const Heading = styled.h1`
     color: ${({theme, darkmode}) => darkmode ? theme.colors.white : theme.colors.lightModeBlue};
     font-size: 20px;
     font-weight: 800;
+    transition: color .3s;
 
     @media(max-width: 450px) {
         font-size: 18px;
