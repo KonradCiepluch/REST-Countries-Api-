@@ -38,9 +38,11 @@ const CountryInfo = ({ darkmode }) => {
 
   const getBorderCountries = () => {
     const borderCountries = [];
-    for (let i = 0; i < borders.length; i++) {
-      const country = countries.find((item) => item.cca3 === borders[i]);
-      borderCountries.push(country.name.official);
+    if (borders) {
+      for (let i = 0; i < borders.length; i++) {
+        const country = countries.find((item) => item.cca3 === borders[i]);
+        borderCountries.push(country.name.official);
+      }
     }
     return borderCountries;
   };
